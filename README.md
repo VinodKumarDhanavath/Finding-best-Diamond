@@ -1,5 +1,4 @@
 # Finding-best-Diamond
-In [7]:
 #Load required Libraries
 import numpy as np
 import pandas as pd
@@ -7,22 +6,20 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 import seaborn as sns
 from sklearn.model_selection import train_test_split, GridSearchCV
-In [15]:
+
 # Load the dataset
 dataset = pd.read_csv('WheatData.csv')
-In [16]:
 dataset.head()
-Out[16]:
+
 A	P	C	LK	WK	A_Coef	LKG	target
 0	15.26	14.84	0.8710	5.763	3.312	2.221	5.220	0
 1	14.88	14.57	0.8811	5.554	3.333	1.018	4.956	0
 2	14.29	14.09	0.9050	5.291	3.337	2.699	4.825	0
 3	13.84	13.94	0.8955	5.324	3.379	2.259	4.805	0
 4	16.14	14.99	0.9034	5.658	3.562	1.355	5.175	0
-In [17]:
 #Key Statistics 
 dataset.describe()
-Out[17]:
+
 A	P	C	LK	WK	A_Coef	LKG	target
 count	210.000000	210.000000	210.000000	210.000000	210.000000	210.000000	210.000000	210.000000
 mean	14.847524	14.559286	0.870999	5.628533	3.258605	3.700201	5.408071	1.000000
